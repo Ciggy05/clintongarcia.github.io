@@ -1,4 +1,3 @@
-/* 1) Basic Reset / Body Style (Optional) */
 *{
     margin: 0;
     padding: 0;
@@ -313,3 +312,127 @@ span{
     font-style:italic;
 }
 
+/* Contact Section Styles */
+.contact {
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #020000;
+}
+
+.contact-wrapper {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    background: #020101;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.contact-image {
+    flex: 1;
+    position: relative;
+}
+
+.contact-image img {
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px solid yellow;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.contact-form-section {
+    flex: 1;
+    padding: 4rem;
+    background: black;
+    border-radius: 0 10px 10px 0;
+}
+
+.contact-form-section h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.contact-form-section p {
+    color: white;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #333;
+}
+
+.social-footer {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.social-footer p {
+    color: #666;
+    margin-bottom: 1rem;
+    text-align: left;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a {
+    color: yellow;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+    }
+
+    .contact-image {
+        height: 300px;
+    }
+
+    .contact-image img {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .contact-form-section {
+        border-radius: 0 0 10px 10px;
+        padding: 2rem;
+    }
+}
